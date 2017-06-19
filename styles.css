@@ -1,0 +1,68 @@
+#theTable {
+  position:relative;
+  top: 250px;
+  font-family:times;
+}
+
+
+#myCarousel {
+  position: relative;
+  top: 150px;
+}
+
+.carousel {
+  display:block;
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+}
+
+#contactForm {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  top: 200px;
+}
+
+
+
+#aboutinfo {
+  display:block;
+  margin: 0 auto;
+  width: 75%;
+  position: relative;
+  top: 200px;
+}
+
+
+#homeVideo {
+  display:block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: verdana;
+}
+
+p {
+  font-family: arial;
+}
+
+#homePage {
+  background-color: lightblue;
+
+}
+
+#aboutPage {
+  background-color: lightgrey;
+}
+
+#inventoryPage {
+  background-color: lavender;
+}
+
+
+#contactPage {
+  background-color: lightpink;
+}

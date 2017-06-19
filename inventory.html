@@ -3,61 +3,148 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
 
-  <link rel="stylesheet/less" href="css/styles.less" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+
+
   </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-       <div class="container">
-         <div class="navbar-header">
-           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-             <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html">Home</a>
-                   </div>
-                   <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a class="navlink" href="index.html"  data-toggle="collapse" data-target=".navbar-collapse.in" >Home</a></li>
-          <li><a class="navlink" href="contact.html"  data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
-          <li><a class="navlink" href="inventory.html"  data-toggle="collapse" data-target=".navbar-collapse.in">Inventory</a></li>
-          <li><a class="navlink" href="about.html"  data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
-        </ul>
+  <body id="inventoryPage">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container-fluid">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Home</a>
+                     </div>
+                     <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="navlink" href="about.html"  data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
+  <li><a class="navlink" href="inventory.html"  data-toggle="collapse" data-target=".navbar-collapse.in">Inventory</a></li>
+            <li><a class="navlink" href="contact.html"  data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
+
+          </ul>
+        </div>
+  </div>
+  <div class="col-sm-3 col-md-3 pull-right">
+         <form class="navbar-form" role="search">
+         <div class="input-group">
+             <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" onkeyup="searchFunction()">
+             <div class="input-group-btn">
+                 <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+             </div>
+         </div>
+         </form>
+         </div>
+      </nav>
+<div="container">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="http://tcblog.truecar.com/wp-content/uploads/2012/10/2013-Nissan-Sentra_TrueCar-Pricing_rear-action_2579.jpg" alt="Nissan">
+            <div class="carousel-caption">
+              <h3>Nissan</h3>
+              <p>2003</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="http://st.motortrend.com/uploads/sites/10/2015/11/2015-toyota-highlander-limited-platinum-suv-angular-front.png?interpolation=lanczos-none&fit=around|300;199" alt="Toyota">
+            <div class="carousel-caption">
+              <h3>Toyota</h3>
+              <p>1999</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="http://www.vwimg.com/iris/iris?vehicle=2017_7P6208_P96_2016_05_29&paint=C7C7&fabric=JJ&pov=E06%2CCGD&bkgnd=transparent&RESP=PNG&x=1200&y=2400&w=7000&h=5150&width=600" alt="vw">
+            <div class="carousel-caption">
+              <h3>VW</h3>
+              <p>2001</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="http://st.motortrend.com/uploads/sites/10/2015/11/2015-toyota-4runner-sr5-4x4-v6-suv-angular-front.png?interpolation=lanczos-none&fit=around|300;199" alt="Toyota">
+            <div class="carousel-caption">
+              <h3>Toyota</h3>
+              <p>2002</p>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="https://www.vw.com/content/dam/vwcom/subtrimImages/trimFamily/NBS-16-0313-RL-DIG-484x226.png" alt="vw">
+            <div class="carousel-caption">
+              <h3>VW beetle</h3>
+              <p>2005</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-</div>
 
-    </nav>
+<article>
 
-
-
-<div class="table-responsive">
-  <table class="table-striped">
+  <table id="theTable" class="table table-striped">
 <thead>
-  <tr>
+  <tr id="row0">
     <td>Car</td><td>Year</td><td>Price</td>
   </tr>
 </thead>
-
+<tbody>
+  <tr id="row1"><td>Nissan</td><td>2003</td><td>5000</td>
+  </tr>
+  <tr id="row2"><td>Toyota</td><td>1999</td><td>2500</td></tr>
+  <tr id="row3"><td>VW</td><td>2001</td><td>3200</td>
+    <tr id="row4"><td>Toyota</td><td>2012</td><td>4000</td>
+    </tr>
+    <tr id="row5"><td>VW beetle</td><td>2005</td><td>3400</td></tr>
+</tbody>
   </table>
 
+
+</article>
+
+
+
+
+
 </div>
-
-</div>
-
-
-
-
-
-
 
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </body>
 </html>
